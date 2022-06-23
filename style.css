@@ -1,0 +1,300 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: Poppoins;
+    font-size: 24px;
+    color: white;
+}
+
+.nav-link {
+    font-family: poppoins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 30px;
+    
+}
+
+
+
+/* Jombotron */
+.jumbotron {
+    background-image: url(image/Rectangle\ 20.png);
+    background-size: cover;
+   
+    position: relative;
+}
+
+
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0,5));
+    position: absolute;
+    bottom: 0;
+}
+
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.jumbotron .lead {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+
+
+
+.Pengumuman {
+  margin-top: -35px;
+    color: white;
+    font-size: 16px;
+    background-color: #13A2A2;
+  
+}
+
+
+
+
+
+
+/* workingspace */
+.workingspace {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.workingspace h3 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.workingspace h3 span {
+    font-weight: 600;
+}
+
+
+
+
+.guru {
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.guru img {
+    border-radius: 4%;
+}
+
+/* gallery */
+
+.gallery .col-md .card {
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+/* see-more */
+
+.Seemore {
+    background-color: rgba(6, 145, 141, 1);
+}
+
+
+.banner {
+    background-color: rgba(6, 145, 141, 1); 
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+
+footer {
+    padding: 8vw;
+    background-color:rgba(3, 38, 38, 1);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+}
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.manage-Reputation {
+    margin-top: 60px;
+}
+
+footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease; 
+}
+
+footer li:hover {
+    color: rgb(241, 240, 245);
+}
+
+footer p {
+    color: #7b838a;
+}
+
+footer .subcribe {
+    margin-top: 20px;
+}
+
+footer input {
+    width: 220px;
+    padding:15px 12px;
+    background: #334F6C;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subcribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
+footer .subcribe a.yellow {
+    color: #2c2c2c;
+    background-color: #fdc938;
+    transition: 0.3s ease;
+}
+
+footer .subcribe .yellow:hover {
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    color: #fff;
+}
+
+footer .copyright .pro-links {
+    margin-top: 0px;
+    
+}
+
+footer .copyright .pro-links i {
+ 
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+footer .copyright .pro-links i:hover {
+    background-color:  #fdc938; 
+    color: #2c2c2c;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility */
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,5);
+    }
+    .nav-link {
+        margin-right: 21px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(218, 213, 205);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -6px;
+    }
+
+
+    .jumbotron {
+        height: 700px;
+        margin-top: -75px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 48px;
+    }
+    
+
+    .workingspace {
+        text-align: left;
+    }
+
+
+    .workingspace p {
+        font-size: 14px;
+        color: #646464;
+        margin: 30px 0;
+    }
+    
+   
+
+    footer .copyright .pro-links {
+        margin-top: 15px;
+    }
+    
+}
